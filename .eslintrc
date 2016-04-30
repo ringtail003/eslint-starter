@@ -1,0 +1,19 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser":true,
+    "es6":true
+  },
+  "rules":{
+    // 末尾のセミコロン
+    "semi": 2,
+    // alert
+    "no-alert":2,
+    // trailing commaを必須にする（複数行の時だけ）
+    "comma-dangle":[2,"always-multiline"],
+    // functionオブジェクトへの代入は不可
+    "no-func-assign":2,
+    // JSDocの構文チェック
+    "valid-jsdoc":2,
+  }
+}
