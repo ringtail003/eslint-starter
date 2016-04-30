@@ -1,7 +1,7 @@
 ### Usage
 
 ```
-$ gulp install -g
+$ npm install gulp -g
 $ npm install
 $ gulp
 ```
