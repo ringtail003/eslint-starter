@@ -11,9 +11,83 @@
     "no-alert":2,
     // trailing commaを必須にする（複数行の時だけ）
     "comma-dangle":[2,"always-multiline"],
+    // inの左に!を使用する時は()を強制
+    "no-negated-in-lhs":1,
     // functionオブジェクトへの代入は不可
     "no-func-assign":2,
     // JSDocの構文チェック
-    "valid-jsdoc":2,
+    "valid-jsdoc":1,
+    // Arrayのcallbackの中でreturnを書く
+    "array-callback-return":1,
+    // ブロックスコープ内での変数宣言(todo うまく拾ってない)
+    "block-scoped-var":1,
+    // returnに一貫性がない
+    "consistent-return":1,
+    // {}の省略
+    "curly":1,
+    // 値比較は===または!==
+    "eqeqeq":[1,"smart"],
+    // nullと比較する時は===を使用
+    "no-eq-null":1,
+    // evalはコンテキストを指定 e.g. window.eval()
+    "no-eval":1,
+    // floatオブジェクトの0の省略を許可しない
+    "no-floating-decimal":1,
+    // 必要のないブロック
+    "no-lone-blocks":1,
+    // 必要のない複数スペース
+    "no-multi-spaces":1,
+    // Functionコンストラクタの使用
+    "no-new-func":1,  
+    // プリミティブのラッパークラスにnewを使用
+    "no-new-wrappers":1,
+    // 8進数はエスケープ文字を使用
+    "no-octal-escape":1,
+    // return文での代入
+    "no-return-assign":1,
+    // 同じ内容の比較
+    "no-self-compare":1,
+    // newなしのthrow
+    "no-throw-literal":2,
+    // 文字列リテラルの連結(改行すれば可)
+    "no-useless-concat":1,
+    // 意味のないエスケープ
+    "no-useless-escape":1,
+    // with禁止(letを使え)
+    "no-with":2,
+    // parseIntにradixを指定
+    "radix":1,
+    // グローバルオブジェクトのshadowing
+    "no-shadow-restricted-names":2, 
+    // undefinedでの初期化
+    "no-undef-init":1,
+    // 配列のスペース
+    "array-bracket-spacing":1,
+    // ブロックのスペース
+    "block-spacing":1,
+    // プロパティのスペース
+    "computed-property-spacing":1,
+    // that,selfにプリミティブを保存しない
+    "consistent-this":1,
+    // indent
+    "indent":[1,4],
+    // キーワードのスペース
+    "keyword-spacing":1,
+    // ネスト数
+    "max-depth":[1,3],
+    // コールバック数
+    "max-nested-callback":[1,3],
+    // 引数の数
+    "max-params":[1,5],
+    // elseの中で意味のないひとつだけのif
+    "no-lonely-if":1,
+    // ドットの前後のスペース
+    "no-whitespace-before-property":1,
+    // セミコロン前のスペース
+    "semi-spacing":[1,{"before":false}],
+    // 引数前後のスペース
+    "space-in-parens":1,
+    // コメントのスペース
+    "spaced-comment":1,
   }
 }
